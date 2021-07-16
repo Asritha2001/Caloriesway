@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CreatePlan">
+
+    <ScrollView
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".CreatePlan">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.011"
+                app:title=" MY PLAN"
+                app:titleTextColor="#000000" />
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/monday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_1"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintVertical_bias="0.005"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/monday"
+                 />
+
+            <EditText
+                android:id="@+id/lunch_1"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_1"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_1"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_1"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_1"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_1"
+                app:layout_constraintVertical_bias="0.005" />
+
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/tuesday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_1"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_2"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tuesday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_2"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_2"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_2"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_2"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_2"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_2"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/wednesday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_2"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_3"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wednesday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_3"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_3"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_3"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_3"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_3"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_3"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/thrusday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/thursday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_3"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_4"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thrusday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_4"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_4"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_4"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_4"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_4"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_4"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/friday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_4"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_5"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/friday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_5"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_5"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_5"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_5"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_5"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_5"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/saturday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_5"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_6"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saturday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_6"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_6"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_6"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_6"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_6"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_6"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/sunday"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_6"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/breakfast_7"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Breakfast"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sunday"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/lunch_7"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Lunch"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/breakfast_7"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/snacks_7"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Snacks"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunch_7"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <EditText
+                android:id="@+id/dinner_7"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="70dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/Dinner"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/snacks_7"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <Button
+                android:id="@+id/save_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:drawablePadding="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/saveandapply"
+                app:backgroundTint="#3F51B5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dinner_7"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

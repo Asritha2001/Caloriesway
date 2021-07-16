@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bmichart">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <ScrollView
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Bmichart">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_bmihome"
+                android:layout_width="322dp"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.82"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.084"
+                app:title="    Body Mass Index"
+                app:titleTextColor="#000000" />
+
+            <TextView
+                android:id="@+id/bmihome_gender_options"
+                android:layout_width="173dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/toolbar_bmihome"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_bmihome"
+                app:layout_constraintVertical_bias="0.005" />
+            <TextView
+                android:id="@+id/bmihome_age"
+                android:layout_width="173dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/bmihome_gender_options"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_gender_options"
+                app:layout_constraintVertical_bias="0.005" />
+
+            <TextView
+                android:id="@+id/bmihome_choose_age"
+                android:layout_width="88dp"
+                android:layout_height="39dp"
+                android:layout_below="@+id/bmihome_age"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/choose_age"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_age"
+                app:layout_constraintVertical_bias="0.004" />
+
+            <Spinner
+                android:id="@+id/bmihome_change_age"
+                android:layout_width="247dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/bmihome_age"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_age"
+                app:layout_constraintVertical_bias="0.004" />
+
+            <EditText
+                android:id="@+id/bmihome_height"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/bmihome_change_age"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/height"
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_change_age"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <EditText
+                android:id="@+id/bmihome_weight"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/bmihome_height"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="@string/weight"
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.211"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_height"
+                app:layout_constraintVertical_bias="0.038" />
+
+            <TextView
+                android:id="@+id/bmihome_bmi"
+                android:layout_width="173dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/bmihome_weight"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/bmi"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.138"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_weight"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="196dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/bmihome_bmi"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="20dp"
+                android:background="#4F5EAE"
+                android:enabled="true"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bmihome_bmi"
+                app:layout_constraintVertical_bias="0.011" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_margin="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/save">
+
+                <TableRow
+                    android:background="@color/colorGreen">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/col1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:text="@string/col2"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:text="@string/row1bmi" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row1status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row2bmi"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row2status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row3bmi"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row3status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row4bmi"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row4status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row5bmi"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row5status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row6bmi"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/row6status"
+                        android:padding="10sp"
+                        android:textSize="12sp"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmilog">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_bmi"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        app:title="       BMI Info"
+        app:titleTextColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/bmi_gender_options"
+        android:layout_width="203dp"
+        android:layout_height="133dp"
+        android:checkedButton="@id/bmi_male"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_bmi"
+        app:layout_constraintVertical_bias="0.038">
+
+        <RadioButton
+            android:id="@+id/bmi_male"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/bmi_female"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/female" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/bmi_agename"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/bmi_gender_options"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/age"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_gender_options"
+        app:layout_constraintVertical_bias="0.005" />
+    <Spinner
+        android:id="@+id/bmi_age"
+        android:layout_width="247dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/bmi_agename"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_agename"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/bmi_height"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bmi_age"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:hint="@string/height"
+        android:inputType="number"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_age"
+        app:layout_constraintVertical_bias="0.102" />
+    <EditText
+        android:id="@+id/bmi_weight"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/bmi_height"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_height"
+        app:layout_constraintVertical_bias="0.102" />
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="114dp"
+        android:layout_height="60dp"
+        android:text="@string/signUp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_weight"
+        app:layout_constraintVertical_bias="0.318" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

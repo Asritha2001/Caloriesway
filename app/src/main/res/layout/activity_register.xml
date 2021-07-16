@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_reg"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        app:title="       Create Account"
+        app:titleTextColor="#000000" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:hint="@string/name"
+        android:layout_below="@+id/toolbar_reg"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_reg"
+        app:layout_constraintVertical_bias="0.129"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reg_name"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reg_email"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:paddingBottom="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <EditText
+        android:id="@+id/reg_conpassword"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/reg_password"
+        android:autofillHints=""
+        android:drawablePadding="10dp"
+        android:paddingBottom="20dp"
+        android:hint="@string/conpassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_password"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="114dp"
+        android:layout_height="60dp"
+        android:text="@string/next"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_conpassword"
+        app:layout_constraintVertical_bias="0.318" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
